@@ -1,0 +1,12 @@
+<div class="left">
+  <input type="text" placeholder="Enter Name" #name />
+  <input type="text" placeholder="Enter Class" #class />
+  <input type="text" placeholder="Enter Id" #id />
+  <input type="text" placeholder="Enter Address" #address />
+
+  <button
+    (click)="addStudent(name.value, class.value, id.value, address.value)"
+  >
+    Add a Student
+  </button>
+</div>

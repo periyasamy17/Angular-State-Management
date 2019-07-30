@@ -1,0 +1,11 @@
+<div class="right" *ngIf="students">
+  <h3>Students</h3>
+  <ul>
+    <li
+      (click)="removeStudent(i)"
+      *ngFor="let student of students | async; let i = index"
+    >
+      <a target="_blank">{{ student.name }}</a>
+    </li>
+  </ul>
+</div>
