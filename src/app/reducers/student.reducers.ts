@@ -3,8 +3,8 @@ import { Student } from '../modals/student.model';
 import * as StudentAction from '../action/student.action';
 
 const initialState: Student = {
-  name: 'peri',
-  addess: 'Chennai',
+  name: 'Peri',
+  address: 'Chennai',
   id: 1,
   class: 'LKG'
 };

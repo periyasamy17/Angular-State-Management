@@ -1,11 +1,32 @@
 <div class="right" *ngIf="students">
-  <h3>Students</h3>
-  <ul>
+  <h3>Students Details</h3>
+  <!-- <ul>
     <li
       (click)="removeStudent(i)"
       *ngFor="let student of students | async; let i = index"
     >
       <a target="_blank">{{ student.name }}</a>
     </li>
-  </ul>
+  </ul> */ -->
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>ID</th>
+        <th>Address</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students | async; let i = index">
+        <td>{{ student.name }}</td>
+        <td>{{ student.class }}</td>
+        <td>{{ student.id }}</td>
+        <td>{{ student.address }}</td>
+        <td (click)="removeStudent(i)">Remove</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

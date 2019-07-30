@@ -21,7 +21,7 @@ export class StudetCreateComponent implements OnInit {
       name: names,
       class: classs,
       id: ids,
-      addess: addresss
+      address: addresss
     };
     this.store.dispatch(new StudentActions.AddStudent(studentDetails));
   }
